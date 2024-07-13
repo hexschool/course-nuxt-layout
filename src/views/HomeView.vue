@@ -3,11 +3,12 @@
 
 <template>
   <main>
-    <img
-      src="/logo-primary.svg"
-      alt="logo"
-      style="fill: orange;"
+    <button
+      type="button"
+      class="btn btn-success"
     >
+      Success
+    </button>
     <h1>Hello</h1>
   </main>
 </template>
