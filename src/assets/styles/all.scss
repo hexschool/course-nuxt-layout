@@ -4,5 +4,7 @@
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
-@import "bootstrap/scss/bootstrap";
+@import "./bootstrap";
+@import "./colors";
 @import "./custom";
+@import "bootstrap/scss/utilities/api";
