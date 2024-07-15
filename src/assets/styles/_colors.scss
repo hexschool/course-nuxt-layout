@@ -116,7 +116,14 @@ $utilities: map-merge(
 //  color classes for btn
 @each $color, $value in $all-colors {
   .btn-#{$color} {
-      @include button-variant($value, $value);
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: shade-color($value, $btn-hover-bg-shade-amount),
+        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
+        $active-background: shade-color($value, $btn-active-bg-shade-amount),
+        $active-border: shade-color($value, $btn-active-border-shade-amount)
+      );
   }
 }
 
