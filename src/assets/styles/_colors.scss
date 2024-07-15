@@ -132,3 +132,20 @@ $utilities: map-merge(
     @include button-outline-variant($value);
   }
 }
+
+
+$hover-darken-percentage: 20%;
+
+@mixin hover-darken($color) {
+  &:hover {
+    color: darken($color, $hover-darken-percentage) !important;
+  }
+}
+
+@each $color, $value in $all-colors {
+  .nav-link {
+    &.text-#{$color} {
+      @include hover-darken($value)
+    }
+  }
+}
