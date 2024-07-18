@@ -6,7 +6,7 @@ import 'bootstrap/js/dist/collapse';
 </script>
 
 <template>
-  <header class="position-fixed w-100">
+  <header class="position-fixed z-3 w-100">
     <nav class="navbar navbar-expand-md p-0 mx-3 my-4 mx-md-20 my-md-6">
       <div class="container-fluid justify-content-between p-0">
         <RouterLink
