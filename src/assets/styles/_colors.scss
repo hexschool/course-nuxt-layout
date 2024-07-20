@@ -1,3 +1,4 @@
+$primary-10: #F7F2EE !default;
 $primary-20: #FAF7F5 !default;
 $primary-40: #F1EAE4 !default;
 $primary-60: #E1D1C2 !default;
@@ -6,6 +7,7 @@ $primary-100: #BF9D7D !default;
 $primary-120: #7B6651 !default;
 
 $primary-colors: (
+  "primary-10": $primary-10,
   "primary-20": $primary-20,
   "primary-40": $primary-40,
   "primary-60": $primary-60,
