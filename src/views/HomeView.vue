@@ -44,7 +44,7 @@ import AppHeader from '@/components/global/AppHeader.vue';
             </p>
             <RouterLink class="btn btn-neutral-0 d-flex justify-content-end align-items-center gap-3 w-100 text-end text-neutral-100 fs-5 fw-semibold border-0">
               立即訂房
-              <div class="hero__cta-deco" />
+              <div class="cta-deco" />
             </RouterLink>
           </div>
         </div>
@@ -192,6 +192,39 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
+section .btn {
+  --primary: #BF9D7D;
+  --neutral: #FFFFFF;
+  height: clamp(4rem, 12vh, 7.25rem);
+  padding: 5%;
+
+  &:hover {
+    box-shadow: inset 48vw 0 0 0 var(--primary);
+    color: var(--neutral) !important;
+    transition-duration: 0.25s;
+
+    .cta-deco {
+      background-color: var(--neutral) !important;
+      width: 8vw;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 4rem;
+  }
+}
+
+.cta-deco {
+  width: 10vw;
+  height: 1px;
+  background-color: #000;
+  transition: background-color 0.25s ease-in-out, width 0.25s ease-in-out;
+
+  @include media-breakpoint-down(md) {
+    width: 5rem;
+  }
+}
+
 .hero img {
   width: 100%;
   height: 100vh;
@@ -242,39 +275,6 @@ $grid-breakpoints: (
 
   @include media-breakpoint-down(md) {
     white-space: normal;
-  }
-}
-
-.hero__intro-content .btn {
-  --primary: #BF9D7D;
-  --neutral: #FFFFFF;
-  height: clamp(4rem, 12vh, 7.25rem);
-  padding: 5%;
-
-  &:hover {
-    box-shadow: inset 48vw 0 0 0 var(--primary);
-    color: var(--neutral) !important;
-    transition-duration: 0.25s;
-
-    .hero__cta-deco {
-      background-color: var(--neutral) !important;
-      width: 8vw;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    height: 4rem;
-  }
-}
-
-.hero__cta-deco {
-  width: 10vw;
-  height: 1px;
-  background-color: #000;
-  transition: background-color 0.25s ease-in-out, width 0.25s ease-in-out;
-
-  @include media-breakpoint-down(md) {
-    width: 5rem;
   }
 }
 
