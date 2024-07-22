@@ -35,11 +35,8 @@ import { Icon } from '@iconify/vue';
         </div>
         <div class="hero__intro position-relative">
           <div class="hero__intro-content">
-            <h1 class="mb-6 text-white">
-              高雄
-              <div class="text-nowrap">
-                豪華住宿之選
-              </div>
+            <h1 class="mb-6 text-white text-nowrap">
+              高雄<br>豪華住宿之選
             </h1>
             <p class="text-neutral-40 fw-medium">
               我們致力於為您提供無與倫比的奢華體驗與優質服務
@@ -62,8 +59,7 @@ import { Icon } from '@iconify/vue';
           <div class="col-12 col-md-2">
             <div class="mb-10 mb-md-0">
               <h2 class="mb-6 mb-md-10 fs-1 fw-bold text-primary-100">
-                最新
-                <div>消息</div>
+                最新<br>消息
               </h2>
               <div class="deco-line" />
             </div>
@@ -156,8 +152,7 @@ import { Icon } from '@iconify/vue';
         <div class="about-content p-6 p-md-20 mt-10 ms-10 me-5 mt-md-20 mx-md-auto text-neutral-0">
           <div class="d-flex align-items-center gap-10 mb-10 mb-md-20">
             <h2 class="text-nowrap mb-0 fs-1 fw-bold">
-              關於
-              <div>我們</div>
+              關於<br>我們
             </h2>
             <div class="deco-line" />
           </div>
@@ -232,10 +227,7 @@ import { Icon } from '@iconify/vue';
       <div class="container">
         <div class="d-flex align-items-center gap-10 mb-10 mb-md-20">
           <h2 class="mb-0 fs-1 fw-bold text-primary-100">
-            佳餚
-            <div>
-              美饌
-            </div>
+            佳餚<br>美饌
           </h2>
           <div class="deco-line" />
         </div>
