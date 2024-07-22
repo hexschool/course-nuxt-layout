@@ -1,12 +1,31 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import { RouterLink } from 'vue-router'
 import { Icon } from '@iconify/vue';
+
 import 'bootstrap/js/dist/collapse';
+
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50;
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+})
 
 </script>
 
 <template>
-  <header class="position-fixed z-3 w-100">
+  <header
+    :class="{'scrolled': isScrolled}"
+    class="position-fixed z-3 w-100"
+  >
     <nav class="navbar navbar-expand-md p-0 mx-3 my-4 mx-md-20 my-md-6">
       <div class="container-fluid justify-content-between p-0">
         <RouterLink
@@ -89,5 +108,26 @@ import 'bootstrap/js/dist/collapse';
 .logo {
   max-width: 27vw;
 }
+
+.navbar {
+  transition: transform .3s;
+}
+
+header {
+  transition: background-color .3s;
+}
+
+header.scrolled {
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  header.scrolled {
+    .navbar {
+      transform: scale(0.95);
+    }
+  }
+}
+
 
 </style>
