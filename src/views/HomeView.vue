@@ -1,5 +1,6 @@
 <script setup>
 import AppHeader from '@/components/global/AppHeader.vue';
+import AppFooter from '@/components/global/AppFooter.vue';
 
 import { Icon } from '@iconify/vue';
 </script>
@@ -471,6 +472,7 @@ import { Icon } from '@iconify/vue';
       </picture>
     </section>
   </main>
+  <AppFooter />
 </template>
 
 <style lang="scss" scoped>
