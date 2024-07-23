@@ -29,4 +29,8 @@ const router = createRouter({
   ]
 })
 
+router.beforeEach((to, from) => {
+  document.title = to.meta?.title ? `${to.meta.title} - 享樂酒店｜Enjoyment Luxury Hotel` : `享樂酒店｜Enjoyment Luxury Hotel`;
+})
+
 export default router
