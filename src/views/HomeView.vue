@@ -1,12 +1,8 @@
 <script setup>
-import AppHeader from '@/components/global/AppHeader.vue';
-import AppFooter from '@/components/global/AppFooter.vue';
-
 import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-  <AppHeader />
   <main class="overflow-hidden">
     <section class="hero position-relative">
       <picture class="position-relative z-n1">
@@ -472,7 +468,6 @@ import { Icon } from '@iconify/vue';
       </picture>
     </section>
   </main>
-  <AppFooter />
 </template>
 
 <style lang="scss" scoped>
