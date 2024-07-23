@@ -1,5 +1,5 @@
 <script setup>
-
+import { Icon } from '@iconify/vue';
 </script>
 
 <template>
@@ -33,6 +33,242 @@
         <h1 class="mb-0 text-neutral-0 fw-bold">
           客房旅宿
         </h1>
+      </div>
+    </section>
+
+    <section class="py-10 py-md-30 bg-primary-10">
+      <div class="container mb-md-12">
+        <h4 class="mb-2 mb-md-4 fs-5 fw-bold text-neutral-80">
+          房型選擇
+        </h4>
+        <h2 class="mb-10 mb-md-20 fs-1 fw-bold text-primary-100">
+          各種房型，任您挑選
+        </h2>
+        <div class="d-flex flex-column gap-6 gap-md-12">
+          <div
+            class="card flex-md-row border-0 rounded-3xl"
+          >
+            <img
+              src="@/assets/images/room-a-1.png"
+              class="rounded-3xl w-100"
+              alt="room-a"
+            >
+            <div class="card-body p-md-10">
+              <h3 class="card-title fs-2 fw-bold text-neutral-100">
+                尊爵雙人房
+              </h3>
+              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+                享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。
+              </p>
+              <div class="d-flex gap-4 mb-6 mb-md-10">
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="fluent:slide-size-24-filled"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    24 坪
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="material-symbols:king-bed"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    1 張大床
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="ic:baseline-person"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    2-4 人
+                  </p>
+                </div>
+              </div>
+              <div class="deco-line w-100 mb-6 mb-md-10" />
+              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+                <p class="mb-0 fw-bold">
+                  NT$ 10,000
+                </p>
+                <Icon
+                  icon="mdi:arrow-right"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card flex-md-row border-0 rounded-3xl"
+          >
+            <img
+              src="@/assets/images/room-b-1.png"
+              class="rounded-3xl w-100"
+              alt="room-b"
+            >
+            <div class="card-body p-md-10">
+              <h3 class="card-title fs-2 fw-bold text-neutral-100">
+                景觀雙人房
+              </h3>
+              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+                景觀雙人房擁有絕美的高雄市景觀，讓您在舒適的環境中欣賞城市之美。
+              </p>
+              <div class="d-flex gap-4 mb-6 mb-md-10">
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="fluent:slide-size-24-filled"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    28 坪
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="material-symbols:king-bed"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    1 張大床
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="ic:baseline-person"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    2-4 人
+                  </p>
+                </div>
+              </div>
+              <div class="deco-line w-100 mb-6 mb-md-10" />
+              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+                <p class="mb-0 fw-bold">
+                  NT$ 10,000
+                </p>
+                <Icon
+                  icon="mdi:arrow-right"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card flex-md-row border-0 rounded-3xl"
+          >
+            <img
+              src="@/assets/images/room-c-1.png"
+              class="rounded-3xl w-100"
+              alt="room-c"
+            >
+            <div class="card-body p-md-10">
+              <h3 class="card-title fs-2 fw-bold text-neutral-100">
+                豪華雅緻房
+              </h3>
+              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+                享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。
+              </p>
+              <div class="d-flex gap-4 mb-6 mb-md-10">
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="fluent:slide-size-24-filled"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    36 坪
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="material-symbols:king-bed"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    2 張大床
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="ic:baseline-person"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    2-4 人
+                  </p>
+                </div>
+              </div>
+              <div class="deco-line w-100 mb-6 mb-md-10" />
+              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+                <p class="mb-0 fw-bold">
+                  NT$ 10,000
+                </p>
+                <Icon
+                  icon="mdi:arrow-right"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card flex-md-row border-0 rounded-3xl"
+          >
+            <img
+              src="@/assets/images/room-d-1.png"
+              class="rounded-3xl w-100"
+              alt="room-d"
+            >
+            <div class="card-body p-md-10">
+              <h3 class="card-title fs-2 fw-bold text-neutral-100">
+                景觀尊榮家庭房
+              </h3>
+              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+                景觀尊榮家庭房不僅有寬敞的空間，還有絕美的市景視野，是帶給家庭最尊榮的待遇。
+              </p>
+              <div class="d-flex gap-4 mb-6 mb-md-10">
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="fluent:slide-size-24-filled"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    48 坪
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="material-symbols:king-bed"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    2 張大床
+                  </p>
+                </div>
+                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                  <Icon
+                    class="mb-2 fs-5 text-primary-100"
+                    icon="ic:baseline-person"
+                  />
+                  <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
+                    2-4 人
+                  </p>
+                </div>
+              </div>
+              <div class="deco-line w-100 mb-6 mb-md-10" />
+              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+                <p class="mb-0 fw-bold">
+                  NT$ 10,000
+                </p>
+                <Icon
+                  icon="mdi:arrow-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -82,6 +318,31 @@ $grid-breakpoints: (
     background-image: linear-gradient(to bottom, #BE9C7C, #FFF);
     margin-bottom: 2.5rem;
   }
+}
+
+.rounded-3xl {
+  border-radius: 1.25rem;
+}
+
+img.rounded-3xl {
+  border-radius: 0;
+  border-bottom-left-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+
+  @include media-breakpoint-down(md) {
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.card-info {
+  width: 97px;
+  height: 97px;
+}
+
+.card img {
+  max-width: 773px;
+  object-fit: cover;
 }
 
 </style>
