@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import FrontLayout from '@/layout/FrontLayout.vue'
 import HomeView from '@/views/HomeView.vue'
 import RoomsView from '@/views/RoomsView.vue'
+import RoomDetailView from '@/views/RoomDetailView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,14 @@ const router = createRouter({
           component: RoomsView,
           meta: {
             title:'客房旅宿'
+          }
+        },
+        {
+          path: 'rooms/:roomId',
+          name: 'room-detail',
+          component: RoomDetailView,
+          meta: {
+            title:'房型詳細'
           }
         },
       ]
