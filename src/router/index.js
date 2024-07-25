@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 import RoomsView from '@/views/RoomsView.vue'
 import RoomDetailView from '@/views/RoomDetailView.vue'
 import BookingView from '@/views/BookingView.vue'
+import BookingConfirmView from '@/views/BookingConfirmView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,6 +43,14 @@ const router = createRouter({
             title:'預約房型'
           }
         },
+        {
+          path: 'booking/confirmation/:bookingId',
+          name: 'booking-confirmation',
+          component: BookingConfirmView,
+          meta: {
+            title: '預約成功'
+          }
+        }
       ]
     },
   ]
