@@ -36,7 +36,12 @@ import { RouterLink, RouterView } from 'vue-router';
         <ul class="nav mb-10 mb-md-20 fw-bold">
           <li class="nav-item position-relative">
             <RouterLink
-              to="/"
+              :to="{
+                name: 'user-profile',
+                params: {
+                  userId: $route.params.userId
+                }
+              }"
               exact-active-class="text-primary-100"
               class="nav-link px-6 py-4 text-white"
             >
