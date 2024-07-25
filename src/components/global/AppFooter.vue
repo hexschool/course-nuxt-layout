@@ -76,8 +76,12 @@ import { Icon } from '@iconify/vue';
         </div>
       </div>
       <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center text-neutral-0 fw-medium">
-        <address>806023 台灣高雄市新興區六角路123號</address>
-        <p>© 享樂酒店 2023 All Rights Reserved.</p>
+        <address class="mb-0">
+          806023 台灣高雄市新興區六角路123號
+        </address>
+        <p class="mb-0">
+          © 享樂酒店 2023 All Rights Reserved.
+        </p>
       </div>
     </div>
   </footer>
