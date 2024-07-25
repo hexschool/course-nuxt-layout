@@ -33,7 +33,7 @@ const { bookingId } = route.params;
           <hr class="my-10 my-md-20  text-neutral-40">
 
           <div class="d-flex flex-column align-items-md-start">
-            <h2 class="mb-6 mb-md-10 text-neutral-0 fs-5 fw-bold">
+            <h2 class="mb-6 mb-md-10 text-neutral-0 fs-7 fs-md-5 fw-bold">
               立即查看您的訂單紀錄
             </h2>
             <button
@@ -79,10 +79,10 @@ const { bookingId } = route.params;
             style="max-width: 478px;"
           >
             <div>
-              <p class="mb-2 text-neutral-80 fw-medium">
+              <p class="mb-2 text-neutral-80 fs-8 fs-md-7 fw-medium">
                 預訂參考編號： {{ bookingId }}
               </p>
-              <h2 class="mb-0 text-neutral-100 fs-5 fw-bold">
+              <h2 class="mb-0 text-neutral-100 fs-7 fs-md-5 fw-bold">
                 即將來的行程
               </h2>
             </div>
@@ -94,7 +94,7 @@ const { bookingId } = route.params;
             >
 
             <section class="d-flex flex-column gap-6">
-              <h3 class="d-flex align-items-center mb-6 text-neutral-80 fs-6 fw-bold">
+              <h3 class="d-flex align-items-center mb-6 text-neutral-80 fs-8 fs-md-6 fw-bold">
                 <p class="mb-0">
                   尊爵雙人房，1 晚
                 </p>
@@ -107,7 +107,7 @@ const { bookingId } = route.params;
                 </p>
               </h3>
 
-              <div class="text-neutral-80 fw-bold">
+              <div class="text-neutral-80 fs-8 fs-md-7 fw-bold">
                 <p class="title-deco mb-2">
                   入住：6 月 10 日星期二，15:00 可入住
                 </p>
@@ -118,7 +118,7 @@ const { bookingId } = route.params;
                 </p>
               </div>
 
-              <p class="mb-0 text-neutral-80 fw-bold">
+              <p class="mb-0 text-neutral-80 fs-8 fs-md-7 fw-bold">
                 NT$ 10,000
               </p>
             </section>
@@ -126,10 +126,10 @@ const { bookingId } = route.params;
             <hr class="my-0 text-neutral-60">
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-8 fs-md-7 fw-bold">
                 房內設備
               </h3>
-              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 border border-neutral-40 rounded-3 list-unstyled">
+              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 fs-8 fs-md-7 bg-neutral-0 border border-neutral-40 rounded-3 list-unstyled">
                 <li class="flex-item d-flex gap-2">
                   <Icon
                     class="fs-5 text-primary-100"
@@ -224,10 +224,10 @@ const { bookingId } = route.params;
             </section>
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-8 fs-md-7 fw-bold">
                 備品提供
               </h3>
-              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 border border-neutral-40 rounded-3 list-unstyled">
+              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 fs-8 fs-md-7 bg-neutral-0 border border-neutral-40 rounded-3 list-unstyled">
                 <li class="flex-item d-flex gap-2">
                   <Icon
                     class="fs-5 text-primary-100"
