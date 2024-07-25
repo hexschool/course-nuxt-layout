@@ -5,6 +5,7 @@ import RoomsView from '@/views/RoomsView.vue'
 import RoomDetailView from '@/views/RoomDetailView.vue'
 import BookingView from '@/views/BookingView.vue'
 import BookingConfirmView from '@/views/BookingConfirmView.vue'
+import UserView from '@/views/UserView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
           meta: {
             title: '預約成功'
           }
+        },
+        {
+          path: 'user/:userId',
+          name: 'user',
+          component: UserView,
         }
       ]
     },
