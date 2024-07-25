@@ -1,5 +1,6 @@
 <script setup>
 import { Icon } from '@iconify/vue';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -481,12 +482,13 @@ import { Icon } from '@iconify/vue';
               <h5 class="mb-0 text-primary-100 fw-bold">
                 NT$ 10,000
               </h5>
-              <button
+              <RouterLink
+                :to="{ name: 'booking', params: { roomId: $route.params.roomId } }"
                 class="btn btn-primary-100 py-4 text-neutral-0 fw-bold rounded-3"
                 type="button"
               >
                 立即預訂
-              </button>
+              </RouterLink>
             </div>
           </div>
         </div>
