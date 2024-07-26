@@ -79,6 +79,10 @@ const router = createRouter({
         }
       ]
     },
+    {
+      path: '/account',
+      component: () => import('@/layout/AccountLayout.vue'),
+    }
   ]
 })
 
