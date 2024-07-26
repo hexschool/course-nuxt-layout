@@ -90,6 +90,14 @@ const router = createRouter({
           meta: {
             title:'會員登入'
           }
+        },
+        {
+          path: 'signup',
+          name: 'signup',
+          component: () => import('../components/account/AccountSignup.vue'),
+          meta: {
+            title:'註冊會員'
+          }
         }
       ]
     }
