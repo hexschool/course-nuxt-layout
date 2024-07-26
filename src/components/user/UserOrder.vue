@@ -2,6 +2,8 @@
 import { RouterLink } from 'vue-router';
 import { Icon } from '@iconify/vue';
 
+import 'bootstrap/js/dist/modal';
+
 const roomId = 'a';  // for navigation demo
 </script>
 
@@ -257,6 +259,8 @@ const roomId = 'a';  // for navigation demo
 
         <div class="d-flex gap-4">
           <button
+            data-bs-toggle="modal"
+            data-bs-target="#cancelModal"
             class="btn btn-outline-primary-100 w-50 py-4 fw-bold"
             style="--bs-btn-hover-color: #fff"
             type="button"
@@ -423,9 +427,60 @@ const roomId = 'a';  // for navigation demo
       </div>
     </div>
   </div>
+
+  <div
+    id="cancelModal"
+    class="modal fade"
+    tabindex="-1"
+  >
+    <div class="modal-dialog modal-dialog-centered align-items-end align-items-md-center m-0 mx-md-auto h-100">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          />
+        </div>
+        <div class="modal-body mx-auto my-10 my-md-15 text-neutral-80 fs-8 fs-md-6 fw-bold">
+          確定要取消此房型的預訂嗎？
+        </div>
+        <div class="modal-footer d-flex gap-4">
+          <button
+            type="button"
+            class="btn btn-outline-primary-100 flex-grow-1 m-0 py-4 fw-bold"
+            style="--bs-btn-hover-color: #fff"
+            data-bs-dismiss="modal"
+          >
+            關閉視窗
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary-100 flex-grow-1 m-0 py-4 text-white fw-bold"
+          >
+            確定取消
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+@import "bootstrap/scss/mixins/breakpoints";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1537px
+);
+
+
 .rounded-3xl {
   border-radius: 1.25rem;
 }
@@ -454,5 +509,27 @@ const roomId = 'a';  // for navigation demo
   max-width: 97px;
   width: 100%;
   white-space: nowrap;
+}
+
+
+.modal {
+  backdrop-filter: blur(10px);
+
+  @include media-breakpoint-down(md) {
+    backdrop-filter: none;
+  }
+}
+
+.modal-header {
+  @include media-breakpoint-down(md) {
+    border-bottom: 0 !important;
+  }
+}
+
+.modal-content {
+  @include media-breakpoint-down(md) {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
 }
 </style>
