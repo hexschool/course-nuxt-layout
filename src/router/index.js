@@ -7,6 +7,7 @@ import BookingView from '@/views/BookingView.vue'
 import BookingConfirmView from '@/views/BookingConfirmView.vue'
 import UserView from '@/views/UserView.vue'
 import UserProfile from '@/components/user/UserProfile.vue'
+import UserOrder from '@/components/user/UserOrder.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,6 +65,14 @@ const router = createRouter({
               component: UserProfile,
               meta: {
                 title: '個人資料'
+              }
+            },
+            {
+              path: 'order',
+              name: 'user-order',
+              component: UserOrder,
+              meta: {
+                title: '訂單列表'
               }
             }
           ]

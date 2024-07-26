@@ -50,7 +50,12 @@ import { RouterLink, RouterView } from 'vue-router';
           </li>
           <li class="nav-item position-relative">
             <RouterLink
-              to="/"
+              :to="{
+                name: 'user-order',
+                params: {
+                  userId: $route.params.userId
+                }
+              }"
               exact-active-class="text-primary-100"
               class="nav-link px-6 py-4 text-white"
             >
