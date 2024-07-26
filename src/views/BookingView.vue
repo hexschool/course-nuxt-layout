@@ -12,7 +12,7 @@ const goBack = () => {
 </script>
 
 <template>
-  <main class="pt-30 bg-neutral-120">
+  <main class="pt-18 pt-md-30 bg-neutral-120">
     <section class="py-10 py-md-30 bg-primary-10">
       <div class="container">
         <button
@@ -32,13 +32,13 @@ const goBack = () => {
         <div class="row gap-10 gap-md-0">
           <div class="col-12 col-md-7">
             <section>
-              <h2 class="mb-8 mb-md-10 text-neutral-100 fs-4 fw-bold">
+              <h2 class="mb-8 mb-md-10 text-neutral-100 fs-6 fs-md-4 fw-bold">
                 訂房資訊
               </h2>
               <div class="d-flex flex-column gap-6">
                 <div class="d-flex justify-content-between align-items-center text-neutral-100">
                   <div>
-                    <h3 class="title-deco mb-2 fs-6 fw-bold">
+                    <h3 class="title-deco mb-2 fs-7 fw-bold">
                       選擇房型
                     </h3>
                     <p class="mb-0 fw-medium">
@@ -54,7 +54,7 @@ const goBack = () => {
                 </div>
                 <div class="d-flex justify-content-between align-items-center text-neutral-100">
                   <div>
-                    <h3 class="title-deco mb-2 fs-6 fw-bold">
+                    <h3 class="title-deco mb-2 fs-7 fw-bold">
                       訂房日期
                     </h3>
                     <p class="mb-2 fw-medium">
@@ -73,7 +73,7 @@ const goBack = () => {
                 </div>
                 <div class="d-flex justify-content-between align-items-center text-neutral-100">
                   <div>
-                    <h3 class="title-deco mb-2 fs-6 fw-bold">
+                    <h3 class="title-deco mb-2 fs-7 fw-bold">
                       房客人數
                     </h3>
                     <p class="mb-0 fw-medium">
@@ -94,7 +94,7 @@ const goBack = () => {
 
             <section>
               <div class="d-flex justify-content-between align-items-center mb-10">
-                <h2 class="mb-0 text-neutral-100 fs-4 fw-bold">
+                <h2 class="mb-0 text-neutral-100 fs-6 fs-md-4 fw-bold">
                   訂房人資訊
                 </h2>
                 <button
@@ -109,12 +109,12 @@ const goBack = () => {
                 <div class="text-neutral-100">
                   <label
                     for="name"
-                    class="form-label fw-bold"
+                    class="form-label fs-8 fs-md-7 fw-bold"
                   >姓名</label>
                   <input
                     id="name"
                     type="text"
-                    class="form-control p-4 rounded-3"
+                    class="form-control p-4 fs-8 fs-md-7 rounded-3"
                     placeholder="請輸入姓名"
                   >
                 </div>
@@ -122,12 +122,12 @@ const goBack = () => {
                 <div class="text-neutral-100">
                   <label
                     for="phone"
-                    class="form-label fw-bold"
+                    class="form-label fs-8 fs-md-7 fw-bold"
                   >手機號碼</label>
                   <input
                     id="phone"
                     type="tel"
-                    class="form-control p-4 rounded-3"
+                    class="form-control p-4 fs-8 fs-md-7 rounded-3"
                     placeholder="請輸入手機號碼"
                   >
                 </div>
@@ -135,12 +135,12 @@ const goBack = () => {
                 <div class="text-neutral-100">
                   <label
                     for="email"
-                    class="form-label fw-bold"
+                    class="form-label fs-8 fs-md-7 fw-bold"
                   >電子信箱</label>
                   <input
                     id="email"
                     type="email"
-                    class="form-control p-4 rounded-3"
+                    class="form-control p-4 fs-8 fs-md-7 rounded-3"
                     placeholder="請輸入電子信箱"
                   >
                 </div>
@@ -148,11 +148,11 @@ const goBack = () => {
                 <div class="text-neutral-100">
                   <label
                     for="address"
-                    class="form-label fw-bold"
+                    class="form-label fs-8 fs-md-7 fw-bold"
                   >地址</label>
                   <div className="d-flex gap-2 mb-4">
                     <select
-                      class="form-select w-50 p-4 text-neutral-80 fw-medium rounded-3"
+                      class="form-select w-50 p-4 text-neutral-80 fs-8 fs-md-7 fw-medium rounded-3"
                     >
                       <option value="臺北市">
                         臺北市
@@ -168,7 +168,7 @@ const goBack = () => {
                       </option>
                     </select>
                     <select
-                      class="form-select w-50 p-4 text-neutral-80 fw-medium rounded-3"
+                      class="form-select w-50 p-4 text-neutral-80 fs-8 fs-md-7 fw-medium rounded-3"
                     >
                       <option value="前金區">
                         前金區
@@ -187,7 +187,7 @@ const goBack = () => {
                   <input
                     id="address"
                     type="text"
-                    class="form-control p-4 rounded-3"
+                    class="form-control p-4 fs-8 fs-md-7 rounded-3"
                     placeholder="請輸入詳細地址"
                   >
                 </div>
@@ -197,12 +197,12 @@ const goBack = () => {
             <hr class="my-10 my-md-12 text-neutral-60">
 
             <section>
-              <h2 class="mb-8 mb-md-10 text-neutral-100 fs-4 fw-bold">
+              <h2 class="mb-8 mb-md-10 text-neutral-100 fs-6 fs-md-4 fw-bold">
                 房間資訊
               </h2>
               <div class="d-flex flex-column gap-6">
                 <section>
-                  <h3 class="title-deco mb-4 mb-md-6 fs-5 fw-bold">
+                  <h3 class="title-deco mb-4 mb-md-6 fs-7 fs-md-5 fw-bold">
                     房型基本資訊
                   </h3>
                   <ul class="d-flex gap-4 list-unstyled">
@@ -237,10 +237,10 @@ const goBack = () => {
                 </section>
 
                 <section>
-                  <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+                  <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                     房間格局
                   </h3>
-                  <ul class="d-flex flex-wrap gap-6 gap-md-10 p-6 bg-neutral-0 rounded-3 list-unstyled">
+                  <ul class="d-flex flex-wrap gap-6 gap-md-10 p-6 fs-8 fs-md-7 bg-neutral-0 rounded-3 list-unstyled">
                     <li class="d-flex gap-2">
                       <Icon
                         class="fs-5 text-primary-100"
@@ -290,10 +290,10 @@ const goBack = () => {
                 </section>
 
                 <section>
-                  <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+                  <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                     房內設備
                   </h3>
-                  <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 rounded-3 list-unstyled">
+                  <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 fs-8 fs-md-7 bg-neutral-0 rounded-3 list-unstyled">
                     <li class="flex-item d-flex gap-2">
                       <Icon
                         class="fs-5 text-primary-100"
@@ -388,10 +388,10 @@ const goBack = () => {
                 </section>
 
                 <section>
-                  <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+                  <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                     備品提供
                   </h3>
-                  <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 rounded-3 list-unstyled">
+                  <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 fs-8 fs-md-7 bg-neutral-0 rounded-3 list-unstyled">
                     <li class="flex-item d-flex gap-2">
                       <Icon
                         class="fs-5 text-primary-100"
@@ -499,7 +499,7 @@ const goBack = () => {
               >
 
               <div>
-                <h2 className="mb-6 text-neutral-100 fs-4 fw-bold">
+                <h2 className="mb-6 text-neutral-100 fs-6 fs-md-4 fw-bold">
                   價格詳情
                 </h2>
                 <div class="d-flex justify-content-between align-items-center mb-3">
