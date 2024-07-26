@@ -1,5 +1,5 @@
 <script setup>
-
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -75,13 +75,13 @@
     </form>
 
     <p class="mb-0 fs-8 fs-md-7">
-      <span class="text-neutral-0 fw-medium">沒有會員嗎？</span>
-      <button
+      <span class="me-2 text-neutral-0 fw-medium">沒有會員嗎？</span>
+      <RouterLink
+        to="signup"
         class="text-primary-100 fw-bold text-decoration-underline bg-transparent border-0"
-        type="button"
       >
         前往註冊
-      </button>
+      </RouterLink>
     </p>
   </div>
 </template>
