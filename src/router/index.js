@@ -82,6 +82,16 @@ const router = createRouter({
     {
       path: '/account',
       component: () => import('@/layout/AccountLayout.vue'),
+      children: [
+        {
+          path: 'login',
+          name: 'login',
+          component: () => import('@/components/account/AccountLogin.vue'),
+          meta: {
+            title:'會員登入'
+          }
+        }
+      ]
     }
   ]
 })
