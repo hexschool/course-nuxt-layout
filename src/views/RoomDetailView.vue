@@ -63,7 +63,7 @@ import { RouterLink } from 'vue-router';
           alt="room-a-1"
         >
         <button
-          class="position-absolute btn btn-primary-10 px-8 py-4 me-3 text-primary-100 border-primary-100 fw-bold rounded-3"
+          class="position-absolute btn btn-primary-10 px-8 py-4 text-primary-100 border-primary-100 fw-bold rounded-3"
           style="bottom: 23px; right: 12px;"
           type="button"
         >
@@ -80,13 +80,13 @@ import { RouterLink } from 'vue-router';
               <h1 class="mb-4 text-neutral-100 fw-bold">
                 尊爵雙人房
               </h1>
-              <p class="mb-0 text-neutral-80 fw-medium">
+              <p class="mb-0 text-neutral-80 fs-8 fs-md-7 fw-medium">
                 享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。
               </p>
             </div>
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                 房型基本資訊
               </h3>
               <ul class="d-flex gap-4 list-unstyled">
@@ -121,10 +121,10 @@ import { RouterLink } from 'vue-router';
             </section>
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                 房間格局
               </h3>
-              <ul class="d-flex flex-wrap gap-6 gap-md-10 p-6 bg-neutral-0 rounded-3 list-unstyled">
+              <ul class="d-flex flex-wrap gap-6 gap-md-10 p-6 bg-neutral-0 fs-8 fs-md-7 rounded-3 list-unstyled">
                 <li class="d-flex gap-2">
                   <Icon
                     class="fs-5 text-primary-100"
@@ -174,10 +174,10 @@ import { RouterLink } from 'vue-router';
             </section>
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                 房內設備
               </h3>
-              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 rounded-3 list-unstyled">
+              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 fs-8 fs-md-7 rounded-3 list-unstyled">
                 <li class="flex-item d-flex gap-2">
                   <Icon
                     class="fs-5 text-primary-100"
@@ -272,10 +272,10 @@ import { RouterLink } from 'vue-router';
             </section>
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                 備品提供
               </h3>
-              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 rounded-3 list-unstyled">
+              <ul class="d-flex flex-wrap row-gap-2 column-gap-10 p-6 mb-0 bg-neutral-0 fs-8 fs-md-7 rounded-3 list-unstyled">
                 <li class="flex-item d-flex gap-2">
                   <Icon
                     class="fs-5 text-primary-100"
@@ -370,10 +370,10 @@ import { RouterLink } from 'vue-router';
             </section>
 
             <section>
-              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-5 fw-bold">
+              <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-7 fs-md-5 fw-bold">
                 訂房須知
               </h3>
-              <ol class="text-neutral-80 fw-medium">
+              <ol class="text-neutral-80 fs-8 fs-md-7 fw-medium">
                 <li>入住時間為下午3點，退房時間為上午12點。</li>
                 <li>如需延遲退房，請提前與櫃檯人員聯繫，視當日房況可能會產生額外費用。</li>
                 <li>請勿在房間內抽煙，若有抽煙需求，可以使用設在酒店各樓層的專用吸煙區。</li>
