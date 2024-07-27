@@ -1,9 +1,15 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-import { RouterLink } from 'vue-router'
+import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { RouterLink, useRoute } from 'vue-router'
 import { Icon } from '@iconify/vue';
 
 import 'bootstrap/js/dist/collapse';
+
+const route = useRoute();
+const transparentBgRoute = ['home', 'rooms'];
+
+const isTransparentRoute = computed(() => transparentBgRoute.includes(route.name));
+
 
 const isScrolled = ref(false);
 
@@ -23,8 +29,12 @@ onUnmounted(() => {
 
 <template>
   <header
-    :class="{'scrolled': isScrolled}"
-    class="position-fixed z-3 w-100"
+    :class="{
+      'scrolled': isScrolled,
+      'bg-transparent': isTransparentRoute,
+      'bg-neutral-120': !isTransparentRoute
+    }"
+    class="position-fixed top-0 z-3 w-100"
   >
     <nav class="navbar navbar-expand-md p-0 mx-3 my-4 mx-md-20 my-md-6">
       <div class="container-fluid justify-content-between p-0">
