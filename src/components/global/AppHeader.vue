@@ -36,7 +36,7 @@ onUnmounted(() => {
     }"
     class="position-fixed top-0 z-3 w-100"
   >
-    <nav class="navbar navbar-expand-md p-0 mx-3 my-4 mx-md-20 my-md-6">
+    <nav class="navbar navbar-expand-md p-0 px-3 py-4 px-md-20 py-md-6">
       <div class="container-fluid justify-content-between p-0">
         <RouterLink
           class="navbar-brand p-0"
@@ -131,21 +131,12 @@ $grid-breakpoints: (
   max-width: 27vw;
 }
 
-.navbar {
-  transition: transform .3s;
-}
-
 header {
   transition: background-color .3s;
 }
 
 header.scrolled {
-  background-color: #000;
-  @include media-breakpoint-up(md) {
-    .navbar {
-      transform: scale(0.95);
-    }
-  }
+  background-color: #000 !important;
 }
 
 @include media-breakpoint-down(md) {
