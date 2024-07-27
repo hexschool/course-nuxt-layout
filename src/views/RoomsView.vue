@@ -24,7 +24,7 @@ import { Icon } from '@iconify/vue';
             <h2 class="fw-semibold">
               享樂酒店
             </h2>
-            <h5 class="fw-semibold">
+            <h5 class="fs-7 fs-md-5 fw-semibold">
               Enjoyment Luxury Hotel
             </h5>
           </div>
@@ -38,7 +38,7 @@ import { Icon } from '@iconify/vue';
 
     <section class="py-10 py-md-30 bg-primary-10">
       <div class="container mb-md-12">
-        <h4 class="mb-2 mb-md-4 fs-5 fw-bold text-neutral-80">
+        <h4 class="mb-2 mb-md-4 fs-8 fs-md-6 fw-bold text-neutral-80">
           房型選擇
         </h4>
         <h2 class="mb-10 mb-md-20 fs-1 fw-bold text-primary-100">
@@ -57,11 +57,11 @@ import { Icon } from '@iconify/vue';
               <h3 class="card-title fs-2 fw-bold text-neutral-100">
                 尊爵雙人房
               </h3>
-              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+              <p class="card-text mb-6 mb-md-10 fs-8 fs-md-7 fw-medium text-neutral-80">
                 享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。
               </p>
-              <div class="d-flex gap-4 mb-6 mb-md-10">
-                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+              <ul class="d-flex gap-4 mb-6 mb-md-10 list-unstyled">
+                <li class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
                     icon="fluent:slide-size-24-filled"
@@ -69,8 +69,8 @@ import { Icon } from '@iconify/vue';
                   <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
                     24 坪
                   </p>
-                </div>
-                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                </li>
+                <li class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
                     icon="material-symbols:king-bed"
@@ -78,8 +78,8 @@ import { Icon } from '@iconify/vue';
                   <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
                     1 張大床
                   </p>
-                </div>
-                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                </li>
+                <li class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
                     icon="ic:baseline-person"
@@ -87,14 +87,15 @@ import { Icon } from '@iconify/vue';
                   <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
                     2-4 人
                   </p>
-                </div>
-              </div>
+                </li>
+              </ul>
               <div class="deco-line w-100 mb-6 mb-md-10" />
-              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+              <div class="d-flex justify-content-between align-items-center fs-7 fs-md-5 text-primary-100">
                 <p class="mb-0 fw-bold">
                   NT$ 10,000
                 </p>
                 <Icon
+                  class="fs-5"
                   icon="mdi:arrow-right"
                 />
               </div>
@@ -113,10 +114,10 @@ import { Icon } from '@iconify/vue';
               <h3 class="card-title fs-2 fw-bold text-neutral-100">
                 景觀雙人房
               </h3>
-              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+              <p class="card-text mb-6 mb-md-10 fs-8 fs-md-7 fw-medium text-neutral-80">
                 景觀雙人房擁有絕美的高雄市景觀，讓您在舒適的環境中欣賞城市之美。
               </p>
-              <div class="d-flex gap-4 mb-6 mb-md-10">
+              <ul class="d-flex gap-4 mb-6 mb-md-10 list-unstyled">
                 <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
@@ -144,13 +145,14 @@ import { Icon } from '@iconify/vue';
                     2-4 人
                   </p>
                 </div>
-              </div>
+              </ul>
               <div class="deco-line w-100 mb-6 mb-md-10" />
-              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+              <div class="d-flex justify-content-between align-items-center fs-7 fs-md-5 text-primary-100">
                 <p class="mb-0 fw-bold">
                   NT$ 10,000
                 </p>
                 <Icon
+                  class="fs-5"
                   icon="mdi:arrow-right"
                 />
               </div>
@@ -169,11 +171,11 @@ import { Icon } from '@iconify/vue';
               <h3 class="card-title fs-2 fw-bold text-neutral-100">
                 豪華雅緻房
               </h3>
-              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+              <p class="card-text mb-6 mb-md-10 fs-8 fs-md-7 fw-medium text-neutral-80">
                 享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。
               </p>
-              <div class="d-flex gap-4 mb-6 mb-md-10">
-                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+              <ul class="d-flex gap-4 mb-6 mb-md-10 list-unstyled">
+                <li class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
                     icon="fluent:slide-size-24-filled"
@@ -181,8 +183,8 @@ import { Icon } from '@iconify/vue';
                   <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
                     36 坪
                   </p>
-                </div>
-                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                </li>
+                <li class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
                     icon="material-symbols:king-bed"
@@ -190,8 +192,8 @@ import { Icon } from '@iconify/vue';
                   <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
                     2 張大床
                   </p>
-                </div>
-                <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
+                </li>
+                <li class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
                     icon="ic:baseline-person"
@@ -199,14 +201,15 @@ import { Icon } from '@iconify/vue';
                   <p class="mb-0 fw-bold text-neutral-80 text-nowrap">
                     2-4 人
                   </p>
-                </div>
-              </div>
+                </li>
+              </ul>
               <div class="deco-line w-100 mb-6 mb-md-10" />
-              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+              <div class="d-flex justify-content-between align-items-center fs-7 fs-md-5 text-primary-100">
                 <p class="mb-0 fw-bold">
                   NT$ 10,000
                 </p>
                 <Icon
+                  class="fs-5"
                   icon="mdi:arrow-right"
                 />
               </div>
@@ -225,10 +228,10 @@ import { Icon } from '@iconify/vue';
               <h3 class="card-title fs-2 fw-bold text-neutral-100">
                 景觀尊榮家庭房
               </h3>
-              <p class="card-text mb-6 mb-md-10 fw-medium text-neutral-80">
+              <p class="card-text mb-6 mb-md-10 fs-8 fs-md-7 fw-medium text-neutral-80">
                 景觀尊榮家庭房不僅有寬敞的空間，還有絕美的市景視野，是帶給家庭最尊榮的待遇。
               </p>
-              <div class="d-flex gap-4 mb-6 mb-md-10">
+              <ul class="d-flex gap-4 mb-6 mb-md-10 list-unstyled">
                 <div class="card-info px-4 py-5 border border-primary-40 rounded-3">
                   <Icon
                     class="mb-2 fs-5 text-primary-100"
@@ -256,13 +259,14 @@ import { Icon } from '@iconify/vue';
                     2-4 人
                   </p>
                 </div>
-              </div>
+              </ul>
               <div class="deco-line w-100 mb-6 mb-md-10" />
-              <div class="d-flex justify-content-between align-items-center fs-5 text-primary-100">
+              <div class="d-flex justify-content-between align-items-center fs-7 fs-md-5 text-primary-100">
                 <p class="mb-0 fw-bold">
                   NT$ 10,000
                 </p>
                 <Icon
+                  class="fs-5"
                   icon="mdi:arrow-right"
                 />
               </div>
