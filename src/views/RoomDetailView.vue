@@ -1,6 +1,45 @@
 <script setup>
-import { Icon } from '@iconify/vue';
+import { ref, reactive } from 'vue';
 import { RouterLink } from 'vue-router';
+import DatePickerModal from '@/components/rooms/DatePickerModal.vue';
+import { Icon } from '@iconify/vue';
+
+const datePickerModal = ref(null);
+
+const openModal = () => {
+  datePickerModal.value.openModal();
+}
+
+
+const formatDate = (date) => {
+  const offsetToUTC8 = date.getHours() + 8;
+  date.setHours(offsetToUTC8);
+  return date.toISOString().split('T')[0];
+};
+
+const currentDate = new Date();
+const nextDay = new Date(currentDate);
+nextDay.setDate(currentDate.getDate() + 1);
+
+const bookingDate = reactive({
+  date: {
+    start: formatDate(currentDate),
+    end: formatDate(nextDay),
+  },
+  minDate: new Date(),
+  maxDate: new Date(currentDate.setFullYear(currentDate.getFullYear() + 1))
+});
+
+const handleDateChange = (date) => {
+  const { start, end } = date;
+  bookingDate.date.start = start;
+  bookingDate.date.end = end;
+}
+
+
+const MAX_BOOKING_PEOPLE = 10;
+const bookingPeople = ref(1);
+
 </script>
 
 <template>
@@ -410,11 +449,13 @@ import { RouterLink } from 'vue-router';
                   <div class="form-floating flex-grow-1 flex-shrink-1">
                     <input
                       id="checkinInput"
+                      readonly
                       type="date"
-                      value="2023-12-03"
+                      :value="bookingDate.date.start"
                       class="form-control p-4 pt-9 text-neutral-100 fw-medium border-neutral-100 rounded-3"
                       style="min-height: 74px;"
                       placeholder="yyyy-mm-dd"
+                      @click="openModal"
                     >
                     <label
                       class="text-neutral-80 fw-medium"
@@ -427,11 +468,13 @@ import { RouterLink } from 'vue-router';
                   <div class="form-floating flex-grow-1 flex-shrink-1">
                     <input
                       id="checkoutInput"
+                      readonly
                       type="date"
-                      value="2023-12-04"
+                      :value="bookingDate.date.end"
                       class="form-control p-4 pt-9 text-neutral-100 fw-medium border-neutral-100 rounded-3"
                       style="min-height: 74px;"
                       placeholder="yyyy-mm-dd"
+                      @click="openModal"
                     >
                     <label
                       class="text-neutral-80 fw-medium"
@@ -448,8 +491,10 @@ import { RouterLink } from 'vue-router';
                   </p>
                   <div class="d-flex align-items-center gap-4">
                     <button
+                      :class="{'disabled bg-neutral-40': bookingPeople === 1}"
                       class="btn btn-neutral-0 p-4 border border-neutral-40 rounded-circle"
                       type="button"
+                      @click="bookingPeople--"
                     >
                       <Icon
                         class="fs-5 text-neutral-100"
@@ -463,12 +508,18 @@ import { RouterLink } from 'vue-router';
                       style="width: 24px;"
                       name="people"
                     >
-                      2
+                      {{ bookingPeople }}
                     </h6>
 
                     <button
+                      :class="{
+                        'disabled bg-neutral-40':
+                          bookingPeople ===
+                          MAX_BOOKING_PEOPLE
+                      }"
                       class="btn btn-neutral-0 p-4 border border-neutral-40 rounded-circle"
                       type="button"
+                      @click="bookingPeople++"
                     >
                       <Icon
                         class="fs-5 text-neutral-100"
@@ -504,6 +555,12 @@ import { RouterLink } from 'vue-router';
         </button>
       </div>
     </section>
+
+    <DatePickerModal
+      ref="datePickerModal"
+      :date-time="bookingDate"
+      @handle-date-change="handleDateChange"
+    />
   </main>
 </template>
 
@@ -551,5 +608,9 @@ $grid-breakpoints: (
   @include media-breakpoint-down(md) {
     flex-basis: 40%;
   }
+}
+
+input[type="date"] {
+  cursor: pointer;
 }
 </style>
