@@ -268,7 +268,7 @@ const isEmailAndPasswordValid = ref(false);
         to="login"
         class="text-primary-100 fw-bold text-decoration-underline bg-transparent border-0"
       >
-        立即登入
+        <span>立即登入</span>
       </RouterLink>
     </p>
   </div>
