@@ -10,6 +10,12 @@ const openModal = () => {
   datePickerModal.value.openModal();
 }
 
+const MAX_BOOKING_PEOPLE = 10;
+const bookingPeople = ref(1);
+
+const daysCount = ref(0);
+
+const daysFormatOnMobile = (date) => date?.split('-').slice(1, 3).join(' / ');
 
 const formatDate = (date) => {
   const offsetToUTC8 = date.getHours() + 8;
@@ -18,27 +24,25 @@ const formatDate = (date) => {
 };
 
 const currentDate = new Date();
-const nextDay = new Date(currentDate);
-nextDay.setDate(currentDate.getDate() + 1);
 
 const bookingDate = reactive({
   date: {
     start: formatDate(currentDate),
-    end: formatDate(nextDay),
+    end: null,
   },
   minDate: new Date(),
   maxDate: new Date(currentDate.setFullYear(currentDate.getFullYear() + 1))
 });
 
-const handleDateChange = (date) => {
-  const { start, end } = date;
+const handleDateChange = (bookingInfo) => {
+  const { start, end } = bookingInfo.date;
   bookingDate.date.start = start;
   bookingDate.date.end = end;
+
+  bookingPeople.value = bookingInfo?.people || 1;
+  daysCount.value = bookingInfo.daysCount;
 }
 
-
-const MAX_BOOKING_PEOPLE = 10;
-const bookingPeople = ref(1);
 
 </script>
 
@@ -536,7 +540,6 @@ const bookingPeople = ref(1);
               <RouterLink
                 :to="{ name: 'booking', params: { roomId: $route.params.roomId } }"
                 class="btn btn-primary-100 py-4 text-neutral-0 fw-bold rounded-3"
-                type="button"
               >
                 立即預訂
               </RouterLink>
@@ -546,13 +549,29 @@ const bookingPeople = ref(1);
       </div>
       
       <div class="d-flex d-md-none justify-content-between align-items-center position-fixed bottom-0 w-100 p-3 bg-neutral-0">
-        <small class="text-neutral-80 fw-medium">ＮＴ$ 10,000 / 晚</small>
-        <button
-          class="btn btn-primary-100 px-12 py-4 text-neutral-0 fw-bold rounded-3"
-          type="button"
-        >
-          查看可訂日期
-        </button>
+        <template v-if="bookingDate.date.end === null">
+          <small class="text-neutral-80 fw-medium">ＮＴ$ 10,000 / 晚</small>
+          <button
+            class="btn btn-primary-100 px-12 py-4 text-neutral-0 fw-bold rounded-3"
+            type="button"
+            @click="openModal"
+          >
+            查看可訂日期
+          </button>
+        </template>
+
+        <template v-else>
+          <div class="d-flex flex-column gap-1">
+            <small class="text-neutral-80 fw-medium">ＮＴ$ 10,000 / {{ daysCount }} 晚 / {{ bookingPeople }} 人</small>
+            <span class="text-neutral fs-9 fw-medium text-decoration-underline">{{ daysFormatOnMobile(bookingDate.date?.start) }} - {{ daysFormatOnMobile(bookingDate.date?.end) }}</span>
+          </div>
+          <RouterLink
+            :to="{ name: 'booking', params: { roomId: $route.params.roomId } }"
+            class="btn btn-primary-100 px-12 py-4 text-neutral-0 fw-bold rounded-3"
+          >
+            立即預訂
+          </RouterLink>
+        </template>
       </div>
     </section>
 
