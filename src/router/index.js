@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import FrontLayout from '@/layout/FrontLayout.vue'
 import HomeView from '@/views/HomeView.vue'
-import RoomsView from '@/views/RoomsView.vue'
-import RoomDetailView from '@/views/RoomDetailView.vue'
-import BookingView from '@/views/BookingView.vue'
-import BookingConfirmView from '@/views/BookingConfirmView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +19,7 @@ const router = createRouter({
         {
           path: 'rooms',
           name: 'rooms',
-          component: RoomsView,
+          component: () => import('@/views/RoomsView.vue'),
           meta: {
             title:'客房旅宿'
           }
@@ -30,7 +27,7 @@ const router = createRouter({
         {
           path: 'rooms/:roomId',
           name: 'room-detail',
-          component: RoomDetailView,
+          component: () => import('@/views/RoomDetailView.vue'),
           meta: {
             title:'房型詳細'
           }
@@ -38,7 +35,7 @@ const router = createRouter({
         {
           path: 'rooms/:roomId/booking',
           name: 'booking',
-          component: BookingView,
+          component: () => import('@/views/BookingView.vue'),
           meta: {
             title:'預約房型'
           }
@@ -46,7 +43,7 @@ const router = createRouter({
         {
           path: 'booking/confirmation/:bookingId',
           name: 'booking-confirmation',
-          component: BookingConfirmView,
+          component: () => import('@/views/BookingConfirmView.vue'),
           meta: {
             title: '預約成功'
           }
@@ -91,7 +88,7 @@ const router = createRouter({
         {
           path: 'signup',
           name: 'signup',
-          component: () => import('../components/account/AccountSignup.vue'),
+          component: () => import('@/components/account/AccountSignup.vue'),
           meta: {
             title:'註冊會員'
           }
