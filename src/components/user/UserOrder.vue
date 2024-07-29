@@ -290,7 +290,7 @@ const roomId = 'a';  // for navigation demo
           歷史訂單
         </h2>
 
-        <div class="d-flex flex-column flex-md-row gap-6">
+        <div class="d-flex flex-column flex-lg-row gap-6">
           <img
             class="img-fluid object-fit-cover rounded-3"
             style="max-width: 120px; height: 80px;"
@@ -333,7 +333,7 @@ const roomId = 'a';  // for navigation demo
 
         <hr class="my-0 text-neutral-60">
 
-        <div class="d-flex flex-column flex-md-row gap-6">
+        <div class="d-flex flex-column flex-lg-row gap-6">
           <img
             class="img-fluid object-fit-cover rounded-3"
             style="max-width: 120px; height: 80px;"
@@ -376,7 +376,7 @@ const roomId = 'a';  // for navigation demo
 
         <hr class="my-0 text-neutral-60">
 
-        <div class="d-flex flex-column flex-md-row gap-6">
+        <div class="d-flex flex-column flex-lg-row gap-6">
           <img
             class="img-fluid object-fit-cover rounded-3"
             style="max-width: 120px; height: 80px;"
