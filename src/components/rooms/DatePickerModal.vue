@@ -121,7 +121,7 @@ const clearDate = () => {
     tabindex="-1"
     aria-hidden="true"
   >
-    <div class="modal-dialog modal-dialog-centered m-0 mt-9 mx-md-auto mt-md-0">
+    <div class="modal-dialog modal-dialog-centered m-0 mt-9 mx-md-auto">
       <div
         :class="{'mt-auto': isConfirmDateOnMobile}"
         class="modal-content gap-6 gap-md-10 rounded-3xl"
