@@ -90,7 +90,7 @@ const goBack = () => {
               </div>
             </section>
 
-            <hr class="my-10 my-md-12 text-neutral-60">
+            <hr class="my-10 my-md-12 opacity-100 text-neutral-60">
 
             <section>
               <div class="d-flex justify-content-between align-items-center mb-10">
@@ -194,7 +194,7 @@ const goBack = () => {
               </div>
             </section>
 
-            <hr class="my-10 my-md-12 text-neutral-60">
+            <hr class="my-10 my-md-12 opacity-100 text-neutral-60">
 
             <section>
               <h2 class="mb-8 mb-md-10 text-neutral-100 fs-6 fs-md-4 fw-bold">
@@ -490,7 +490,7 @@ const goBack = () => {
 
           <div class="col-12 col-md-5">
             <div
-              class="confirm-form rounded-3xl d-flex flex-column gap-10 p-6 p-md-10 mx-auto ms-md-auto bg-neutral-0"
+              class="confirm-form rounded-3xl d-flex flex-column gap-10 p-6 p-md-10 mx-auto ms-md-auto me-md-0 bg-neutral-0"
             >
               <img
                 class="img-fluid rounded-3"
@@ -523,7 +523,7 @@ const goBack = () => {
                     -NT$ 1,000
                   </span>
                 </div>
-                <hr class="my-6 bg-neutral-40">
+                <hr class="my-6 opacity-100 text-neutral-40">
                 <div class="d-flex justify-content-between align-items-center text-neutral-100 fw-bold">
                   <p class="d-flex align-items-center mb-0">
                     總價
