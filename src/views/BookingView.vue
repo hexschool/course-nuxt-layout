@@ -1,12 +1,28 @@
 <script setup>
-import { Icon } from '@iconify/vue';
+import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-
+import BookingLoading from '@/components/rooms/BookingLoading.vue';
+import { Icon } from '@iconify/vue';
 
 const router = useRouter();
 
 const goBack = () => {
   router.back();
+}
+const isLoading = ref(false);
+
+const confirmBooking = () => {
+  isLoading.value = true;
+
+  setTimeout(() => {
+    isLoading.value = false;
+    router.push({
+      name: 'booking-confirmation',
+      params: {
+        bookingId: 'HH2302183151222'
+      }
+    })
+  }, 1500);
 }
 
 </script>
@@ -537,6 +553,7 @@ const goBack = () => {
               <button
                 class="btn btn-primary-100 py-4 text-neutral-0 fw-bold rounded-3"
                 type="button"
+                @click="confirmBooking"
               >
                 確認訂房
               </button>
@@ -545,6 +562,8 @@ const goBack = () => {
         </div>
       </div>
     </section>
+
+    <BookingLoading v-if="isLoading" />
   </main>
 </template>
 
