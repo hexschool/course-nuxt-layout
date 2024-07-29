@@ -80,7 +80,7 @@ import { RouterLink } from 'vue-router';
         to="signup"
         class="text-primary-100 fw-bold text-decoration-underline bg-transparent border-0"
       >
-        前往註冊
+        <span>前往註冊</span>
       </RouterLink>
     </p>
   </div>
