@@ -59,7 +59,7 @@ const roomId = 'a';  // for navigation demo
           </p>
         </section>
 
-        <hr class="my-0 text-neutral-60">
+        <hr class="my-0 opacity-100 text-neutral-40">
 
         <section>
           <h3 class="title-deco mb-6 text-neutral-100 fs-8 fs-md-7 fw-bold">
@@ -331,7 +331,7 @@ const roomId = 'a';  // for navigation demo
           </section>
         </div>
 
-        <hr class="my-0 text-neutral-60">
+        <hr class="my-0 opacity-100 text-neutral-40">
 
         <div class="d-flex flex-column flex-lg-row gap-6">
           <img
@@ -374,7 +374,7 @@ const roomId = 'a';  // for navigation demo
           </section>
         </div>
 
-        <hr class="my-0 text-neutral-60">
+        <hr class="my-0 opacity-100 text-neutral-40">
 
         <div class="d-flex flex-column flex-lg-row gap-6">
           <img
