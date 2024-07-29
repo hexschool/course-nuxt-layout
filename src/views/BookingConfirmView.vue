@@ -30,7 +30,7 @@ const { bookingId } = route.params;
             我們已發送訂房資訊及詳細內容至你的電子信箱，入住時需向櫃檯人員出示訂房人證件。
           </p>
 
-          <hr class="my-10 my-md-20  text-neutral-40">
+          <hr class="my-10 my-md-20 opacity-100  text-neutral-40">
 
           <div class="d-flex flex-column align-items-md-start">
             <h2 class="mb-6 mb-md-10 text-neutral-0 fs-7 fs-md-5 fw-bold">
@@ -44,7 +44,7 @@ const { bookingId } = route.params;
             </button>
           </div>
 
-          <hr class="my-10 my-md-20  text-neutral-40">
+          <hr class="my-10 my-md-20 opacity-100  text-neutral-40">
 
           <h2 class="mb-6 mb-md-10 text-neutral-0 fs-5 fw-bold">
             訂房人資訊
@@ -123,7 +123,7 @@ const { bookingId } = route.params;
               </p>
             </section>
 
-            <hr class="my-0 text-neutral-60">
+            <hr class="my-0 opacity-100 text-neutral-40">
 
             <section>
               <h3 class="title-deco mb-4 mb-md-6 text-neutral-100 fs-8 fs-md-7 fw-bold">
