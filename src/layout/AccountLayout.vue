@@ -88,7 +88,8 @@ import 'bootstrap/js/dist/collapse';
     </header>
     <div class="position-relative d-flex flex-column flex-md-row">
       <img
-        class="d-none d-md-block position-relative z-1 w-50 vh-100 object-fit-cover"
+        class="d-none d-md-block position-relative z-1 min-vh-100 object-fit-cover"
+        style="max-width: 50%;"
         src="@/assets/images/login-hero.png"
         alt="login-hero"
       >
