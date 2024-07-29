@@ -80,16 +80,36 @@ onUnmounted(() => {
               </RouterLink>
             </li>
             <li class="d-none d-md-block nav-item">
-              <RouterLink
-                to="/"
-                class="nav-link d-flex gap-2 p-4 text-neutral-0"
-              >
-                <Icon 
-                  class="fs-5"
-                  icon="mdi:account-circle-outline"
-                />
-                Jessica
-              </RouterLink>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="nav-link d-flex gap-2 p-4 text-neutral-0"
+                  data-bs-toggle="dropdown"
+                >
+                  <Icon 
+                    class="fs-5"
+                    icon="mdi:account-circle-outline"
+                  />
+                  Jessica
+                </button>
+                <ul
+                  class="dropdown-menu py-3 overflow-hidden"
+                  style="right: 0; left: auto; border-radius: 20px;"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item px-6 py-4"
+                      href="#"
+                    >我的帳戶</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item px-6 py-4"
+                      href="#"
+                    >登出</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="d-md-none nav-item">
               <RouterLink
@@ -193,6 +213,14 @@ header.scrolled {
       width: 90vw;
     }
   }
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 16rem;
+  --bs-dropdown-link-hover-color: #BF9D7D;
+  --bs-dropdown-link-hover-bg: #F7F2EE;
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: #BF9D7D;
 }
 
 
