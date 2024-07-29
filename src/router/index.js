@@ -5,8 +5,6 @@ import RoomsView from '@/views/RoomsView.vue'
 import RoomDetailView from '@/views/RoomDetailView.vue'
 import BookingView from '@/views/BookingView.vue'
 import BookingConfirmView from '@/views/BookingConfirmView.vue'
-import UserProfile from '@/components/user/UserProfile.vue'
-import UserOrder from '@/components/user/UserOrder.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -61,7 +59,7 @@ const router = createRouter({
             {
               path: 'profile',
               name: 'user-profile',
-              component: UserProfile,
+              component: () => import('@/components/user/UserProfile.vue'),
               meta: {
                 title: '個人資料'
               }
@@ -69,7 +67,7 @@ const router = createRouter({
             {
               path: 'order',
               name: 'user-order',
-              component: UserOrder,
+              component: () => import('@/components/user/UserOrder.vue'),
               meta: {
                 title: '訂單列表'
               }
