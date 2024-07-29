@@ -98,7 +98,18 @@ const router = createRouter({
         }
       ]
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({ top: 0 })
+        }, 0)
+      })
+    }
+  }
 })
 
 router.beforeEach((to, from) => {
