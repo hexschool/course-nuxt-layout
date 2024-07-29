@@ -5,7 +5,6 @@ import RoomsView from '@/views/RoomsView.vue'
 import RoomDetailView from '@/views/RoomDetailView.vue'
 import BookingView from '@/views/BookingView.vue'
 import BookingConfirmView from '@/views/BookingConfirmView.vue'
-import UserView from '@/views/UserView.vue'
 import UserProfile from '@/components/user/UserProfile.vue'
 import UserOrder from '@/components/user/UserOrder.vue'
 
@@ -57,7 +56,7 @@ const router = createRouter({
         {
           path: 'user/:userId',
           name: 'user',
-          component: UserView,
+          component: () => import('@/layout/UserLayout.vue'),
           children: [
             {
               path: 'profile',
