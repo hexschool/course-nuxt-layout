@@ -51,7 +51,6 @@ const handleDateChange = (bookingInfo) => {
     <section class="p-md-20 bg-primary-10">
       <div
         class="d-none d-md-block position-relative"
-        style="max-width: 91.7vw;"
       >
         <div class="d-flex gap-2 rounded-3xl overflow-hidden">
           <div style="width: 52.5vw;">
