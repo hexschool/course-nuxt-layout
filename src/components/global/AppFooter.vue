@@ -31,10 +31,6 @@ import { Icon } from '@iconify/vue';
                 icon="mdi:instagram"
               />
             </a>
-            <!-- <Icon
-              class="p-2 border border-1 rounded-circle"
-              icon="mdi:instagram"
-            /> -->
           </div>
         </div>
         <div class="d-flex flex-column flex-md-row gap-4 gap-md-20">
@@ -42,7 +38,7 @@ import { Icon } from '@iconify/vue';
             <p class="mb-4 mb-md-10 fw-bold text-neutral-0">
               TEL
               <a
-                class="d-block mt-2 text-neutral-40 fw-medium text-decoration-none"
+                class="d-block mt-2 text-neutral-40 fs-8 fs-md-7 fw-normal text-decoration-none"
                 href="tel:+886-7-1234567"
               >+886-7-1234567</a>
             </p>
@@ -50,7 +46,7 @@ import { Icon } from '@iconify/vue';
             <p class="mb-0 fw-bold text-neutral-0">
               FAX
               <a
-                class="d-block mt-2 text-neutral-40 fw-medium text-decoration-none"
+                class="d-block mt-2 text-neutral-40 fs-8 fs-md-7 fw-normal text-decoration-none"
                 href="fax:+886-7-1234567"
               >+886-7-1234567</a>
             </p>
@@ -59,7 +55,7 @@ import { Icon } from '@iconify/vue';
             <p class="mb-4 mb-md-10 fw-bold text-neutral-0">
               MAIL
               <a
-                class="d-block mt-2 text-neutral-40 fw-medium text-decoration-none"
+                class="d-block mt-2 text-neutral-40 fs-8 fs-md-7 fw-normal text-decoration-none"
                 href="mailto:elh@hexschool.com"
               >elh@hexschool.com</a>
             </p>
@@ -67,7 +63,7 @@ import { Icon } from '@iconify/vue';
             <p class="mb-0 fw-bold text-neutral-0">
               WEB
               <a
-                class="d-block mt-2 text-neutral-40 fw-medium text-decoration-none"
+                class="d-block mt-2 text-neutral-40 fs-8 fs-md-7 fw-normal text-decoration-none"
                 href="https://www.elhhexschool.com.tw/"
                 target="_blank"
               >www.elhhexschool.com.tw</a>
@@ -75,7 +71,7 @@ import { Icon } from '@iconify/vue';
           </address>
         </div>
       </div>
-      <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center text-neutral-0 fw-medium">
+      <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center gap-4 gap-md-0 text-neutral-0 fs-8 fs-md-7">
         <address class="mb-0">
           806023 台灣高雄市新興區六角路123號
         </address>
