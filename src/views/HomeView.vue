@@ -12,6 +12,17 @@ import 'swiper/css/pagination';
 const modules = ref([Autoplay, Navigation, Pagination]);
 
 
+const roomSwiper = ref(null);
+
+const slidePrev = () => {
+  roomSwiper.value.$el.swiper.slidePrev();
+}
+
+const slideNext = () => {
+  roomSwiper.value.$el.swiper.slideNext();
+}
+
+
 </script>
 
 <template>
@@ -203,16 +214,35 @@ const modules = ref([Autoplay, Navigation, Pagination]);
 
     <section class="room-intro position-relative px-3 py-20 px-md-0 py-md-30 bg-neutral-120">
       <div class="d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-md-start align-items-md-end gap-6 gap-md-20">
-        <picture class="position-relative z-1">
-          <source
-            srcset="@/assets/images/home-room-1.png"
-            media="(min-width:375px)"
+        <swiper
+          ref="roomSwiper"
+          :modules="modules"
+          :slides-per-view="1"
+          :pagination="true"
+          :autoplay="{
+            delay: 5000,
+            disableOnInteraction: false,
+          }"
+          :loop="true"
+        >
+          <swiper-slide
+            v-for="(num, index) in 5"
+            :key="index"
           >
-          <img
-            src="@/assets/images/home-room-sm-1.png"
-            alt="room-a"
-          >
-        </picture>
+            <picture>
+              <source
+                srcset="@/assets/images/home-room-1.png"
+                media="(min-width:768px)"
+              >
+              <img
+                class="w-100"
+                src="@/assets/images/home-room-sm-1.png"
+                alt="room-a"
+              >
+            </picture>
+          </swiper-slide>
+        </swiper>
+        
         <div class="room-intro-content text-neutral-0">
           <h2 class="mb-2 mb-md-4 fw-bold">
             尊爵雙人房
@@ -230,17 +260,29 @@ const modules = ref([Autoplay, Navigation, Pagination]);
             查看更多
             <div class="cta-deco" />
           </RouterLink>
-          <div class="d-flex justify-content-end text-primary-100">
-            <Icon
-              icon="mdi:arrow-left"
-              class="m-4"
-              style="font-size: 1.5rem;"
-            />
-            <Icon
-              icon="mdi:arrow-right"
-              class="m-4"
-              style="font-size: 1.5rem;"
-            />
+          <div class="d-flex justify-content-end">
+            <button
+              class="bg-transparent text-primary-100 icon-link icon-link-hover border-0"
+              type="button"
+              @click="slidePrev"
+            >
+              <Icon
+                icon="mdi:arrow-left"
+                class="bi m-4"
+                style="font-size: 1.5rem; --bs-icon-link-transform: translateX(-0.25em);"
+              />
+            </button>
+            <button
+              class="bg-transparent text-primary-100 icon-link icon-link-hover border-0"
+              type="button"
+              @click="slideNext"
+            >
+              <Icon
+                icon="mdi:arrow-right"
+                class="bi m-4"
+                style="font-size: 1.5rem;"
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -781,11 +823,12 @@ section .btn {
   }
 }
 
-.room-intro img{
+.room-intro .swiper{
   --origin-width: 900;
   --container-width: 1920;
   --percent-width: calc(var(--origin-width) / var(--container-width) * 100vw);
   max-width: var(--percent-width);
+  margin: 0;
 
   @include media-breakpoint-down(md) {
     max-width: 100%;
