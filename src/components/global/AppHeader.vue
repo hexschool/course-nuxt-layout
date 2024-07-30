@@ -4,6 +4,7 @@ import { RouterLink, useRoute } from 'vue-router'
 import { Icon } from '@iconify/vue';
 
 import 'bootstrap/js/dist/collapse';
+import 'bootstrap/js/dist/dropdown';
 
 const route = useRoute();
 const transparentBgRoute = ['home', 'rooms'];
