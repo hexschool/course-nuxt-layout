@@ -43,20 +43,34 @@ const roomImages = computed(() => {
 <template>
   <main>
     <section class="hero position-relative">
-      <picture class="position-relative z-n1">
-        <source
-          srcset="@/assets/images/home-hero.png"
-          media="(min-width:576px)"
+      <swiper
+        :modules="modules"
+        :slides-per-view="1"
+        :pagination="true"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false,
+        }"
+      >
+        <swiper-slide
+          v-for="(num, index) in 5"
+          :key="index"
         >
-        <img
-          class="hero-img"
-          src="@/assets/images/home-hero-sm.png"
-          alt="hero banner"
-        >
-      </picture>
-      <div class="hero__background-overlay" />
+          <picture>
+            <source
+              srcset="@/assets/images/home-hero.png"
+              media="(min-width:576px)"
+            >
+            <img
+              class="hero-img"
+              src="@/assets/images/home-hero-sm.png"
+              alt="hero banner"
+            >
+          </picture>
+        </swiper-slide>
+      </swiper>
 
-      <div class="hero-wrapper d-flex flex-column justify-content-center align-items-center flex-md-row gap-10 gap-md-20 w-100 position-absolute">
+      <div class="hero-wrapper d-flex flex-column justify-content-center align-items-center flex-md-row gap-10 gap-md-20 w-100 position-absolute z-2">
         <div class="d-flex flex-column align-items-center text-center d-md-block text-md-start">
           <div class="mt-10 mb-5 mt-md-0 mb-md-10 text-primary-100 fw-bold">
             <h2 class="fw-semibold">
@@ -489,17 +503,11 @@ $grid-breakpoints: (
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  filter: brightness(40%);
 }
 
 .hero-wrapper {
   inset: 0;
-}
-
-.hero__background-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .deco-line {
@@ -578,6 +586,10 @@ $grid-breakpoints: (
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+}
+
+.hero .swiper :deep(.swiper-pagination) {
+  bottom: 32px;
 }
 
 .swiper :deep(.swiper-pagination) {
