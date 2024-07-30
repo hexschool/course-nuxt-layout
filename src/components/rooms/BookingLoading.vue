@@ -1,10 +1,10 @@
 <template>
   <div
-    class="position-fixed z-3 d-flex justify-content-center align-items-center"
+    class="position-fixed z-3 d-flex justify-content-center align-items-center px-3"
     style="inset: 0; background-color: #0005;; backdrop-filter: blur(10px);"
   >
     <div
-      class="w-100 h-75 d-flex flex-column justify-content-center align-items-center bg-neutral-0"
+      class="w-100 h-50 h-md-75 d-flex flex-column justify-content-center align-items-center bg-neutral-0"
       style="max-width: 1020px; border-radius: 20px;"
     >
       <div class="d-flex gap-4 mb-15">
@@ -48,6 +48,14 @@
 </script>
 
 <style lang="scss" scoped>
+$breakpoint-md: 768px;
+
+.h-md-75 {
+  @media (min-width: $breakpoint-md) {
+    height: 75% !important;
+  }
+}
+
 .spinner-grow, .spinner-border {
   width: 12px;
   height: 12px;
