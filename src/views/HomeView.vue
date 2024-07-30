@@ -21,10 +21,10 @@ import { Icon } from '@iconify/vue';
       <div class="hero-wrapper d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between gap-md-10 w-100 position-absolute px-md-20">
         <div class="d-flex flex-column align-items-center text-center d-md-block text-md-start">
           <div class="mt-10 mb-5 mt-md-0 mb-md-10 text-primary-100 fw-bold">
-            <h2 class="fw-semibold">
+            <h2>
               享樂酒店
             </h2>
-            <h5 class="fw-semibold">
+            <h5 class="mb-0 fs-7 fs-md-5">
               Enjoyment Luxury Hotel
             </h5>
           </div>
@@ -32,10 +32,10 @@ import { Icon } from '@iconify/vue';
         </div>
         <div class="hero__intro position-relative">
           <div class="hero__intro-content">
-            <h1 class="mb-6 text-white text-nowrap">
+            <h1 class="mb-6 text-white fw-bold text-nowrap">
               高雄<br>豪華住宿之選
             </h1>
-            <p class="text-neutral-40 fw-medium">
+            <p class="text-neutral-40 fw-semibold">
               我們致力於為您提供無與倫比的奢華體驗與優質服務
             </p>
             <RouterLink 
@@ -81,7 +81,7 @@ import { Icon } from '@iconify/vue';
                   <h3 class="card-title mb-2 mb-md-6 fw-bold">
                     秋季旅遊，豪華享受方案
                   </h3>
-                  <p class="card-text text-neutral-80">
+                  <p class="card-text text-neutral-80 fs-8 fs-md-7 fw-medium">
                     秋天就是要來場豪華的旅遊！我們為您準備了一系列的秋季特別方案，包括舒適的住宿、美食饗宴，以及精彩的活動。不論您是想來一趟浪漫之旅，還是想和家人共度美好時光，都能在這裡找到最適合的方案。
                   </p>
                 </div>
@@ -107,7 +107,7 @@ import { Icon } from '@iconify/vue';
                   <h3 class="card-title mb-2 mb-md-6 fw-bold">
                     輕鬆住房專案
                   </h3>
-                  <p class="card-text text-neutral-80">
+                  <p class="card-text text-neutral-80 fs-8 fs-md-7 fw-medium">
                     我們知道，有時候您只是需要一個舒適的地方放鬆心情。因此，我們推出了「輕鬆住房專案」，讓您無壓力地享受住宿。不管是短期的休息，還是長期的住宿，我們都會以最貼心的服務，讓您感到賓至如歸。
                   </p>
                 </div>
@@ -133,7 +133,7 @@ import { Icon } from '@iconify/vue';
                   <h3 class="card-title mb-2 mb-md-6 fw-bold">
                     耶誕快樂，住房送禮
                   </h3>
-                  <p class="card-text text-neutral-80">
+                  <p class="card-text text-neutral-80 fs-8 fs-md-7 fw-medium">
                     聖誕節來臨，我們為您準備了特別的禮物！在聖誕期間訂房，不僅有特別優惠，還會送上我們精心準備的聖誕禮物。讓我們一起慶祝這個溫馨的節日吧！
                   </p>
                 </div>
@@ -154,20 +154,20 @@ import { Icon } from '@iconify/vue';
             <div class="deco-line" />
           </div>
           <div class="d-flex flex-column gap-4 gap-md-10 fw-medium">
-            <p class="mb-0">
+            <p class="mb-0 fs-8 fs-md-7">
               享樂酒店，位於美麗島高雄的心臟地帶，是這座城市的璀璨瑰寶與傲人地標。
               <br>
               我們的存在，不僅僅是為了提供奢華的住宿體驗，更是為了將高雄的美麗與活力，獻給每一位蒞臨的旅客。
             </p>
-            <p class="mb-0">
+            <p class="mb-0 fs-8 fs-md-7">
               我們的酒店，擁有時尚典雅的裝潢，每一個細節都充滿著藝術與設計的精緻。
               <br>
               我們的員工，都以熱情的服務與專業的態度，讓每一位客人都能感受到賓至如歸的溫暖。
             </p>
-            <p class="mb-0">
+            <p class="mb-0 fs-8 fs-md-7">
               在這裡，您可以遙望窗外，欣賞高雄的城市景色，感受這座城市的繁華與活力；您也可以舒適地坐在我們的餐廳，品嚐精緻的佳餚，體驗無與倫比的味覺盛宴。
             </p>
-            <p class="mb-0">
+            <p class="mb-0 fs-8 fs-md-7">
               享樂酒店，不僅是您在高雄的住宿之選，更是您感受高雄魅力的最佳舞台。我們期待著您的蒞臨，讓我們共同編織一段難忘的高雄故事。
             </p>
           </div>
@@ -191,7 +191,7 @@ import { Icon } from '@iconify/vue';
           <h2 class="mb-2 mb-md-4 fw-bold">
             尊爵雙人房
           </h2>
-          <p class="mb-6 mb-md-10">
+          <p class="mb-6 mb-md-10 fs-8 fs-md-7">
             享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。
           </p>
           <div class="mb-6 mb-md-10 fs-3 fw-bold">
@@ -199,7 +199,7 @@ import { Icon } from '@iconify/vue';
           </div>
           <RouterLink
             to="/rooms"
-            class="btn btn-neutral-0 d-flex justify-content-end align-items-center gap-3 w-100 p-5 p-md-10 mb-6 mb-md-10 text-end text-neutral-100 fs-5 fw-semibold border-0"
+            class="btn btn-neutral-0 d-flex justify-content-end align-items-center gap-3 w-100 p-5 p-md-10 mb-6 mb-md-10 text-end text-neutral-100 fs-7 fs-md-5 fw-bold border-0"
           >
             查看更多
             <div class="cta-deco" />
@@ -249,12 +249,12 @@ import { Icon } from '@iconify/vue';
                   <h5 class="card-title mb-0 fw-bold">
                     海霸
                   </h5>
-                  <div class="d-flex justify-content-between gap-4 text-neutral-40">
+                  <div class="d-flex justify-content-between gap-4 text-neutral-40 fs-8 fs-md-7">
                     <span class="fw-bold">SUN-MON</span>
                     <span class="fw-bold">11:00 - 20:30</span>
                   </div>
                 </div>
-                <p class="card-text fw-medium">
+                <p class="card-text fs-8 fs-md-7">
                   以新鮮海產料理聞名，我們的專業廚師選用高雄當地的海鮮，每一道菜都充滿海洋的鮮美與清甜。無論是烤魚、蒸蝦還是煮蛤蜊，都能讓您品嚐到最新鮮的海洋風味。
                 </p>
               </div>
@@ -281,12 +281,12 @@ import { Icon } from '@iconify/vue';
                   <h5 class="card-title mb-0 fw-bold">
                     日食
                   </h5>
-                  <div class="d-flex justify-content-between gap-4 text-neutral-40">
+                  <div class="d-flex justify-content-between gap-4 text-neutral-40 fs-8 fs-md-7">
                     <span class="fw-bold">SUN-MON</span>
                     <span class="fw-bold">17:00 - 22:00</span>
                   </div>
                 </div>
-                <p class="card-text fw-medium">
+                <p class="card-text fs-8 fs-md-7">
                   為您提供優質的牛排，每一塊肉都來自頂級的牛肉，經過專業廚師的巧手烹調，口感豐滿、風味絕佳。搭配我們的特製醬料，讓您的味蕾享受一場美味的盛宴。
                 </p>
               </div>
@@ -313,12 +313,12 @@ import { Icon } from '@iconify/vue';
                   <h5 class="card-title mb-0 fw-bold">
                     山臻
                   </h5>
-                  <div class="d-flex justify-content-between gap-4 text-neutral-40">
+                  <div class="d-flex justify-content-between gap-4 text-neutral-40 fs-8 fs-md-7">
                     <span class="fw-bold">SUN-MON</span>
                     <span class="fw-bold">11:30 - 20:30</span>
                   </div>
                 </div>
-                <p class="card-text fw-medium">
+                <p class="card-text fs-8 fs-md-7">
                   帶您進入一次辣味與鮮香兼具的川菜美食之旅。我們的廚師掌握正宗的川菜烹調技巧，從麻辣鍋到口水雞，每一道菜都有其獨特的風味，讓您回味無窮。
                 </p>
               </div>
@@ -345,12 +345,12 @@ import { Icon } from '@iconify/vue';
                   <h5 class="card-title mb-0 fw-bold">
                     月永
                   </h5>
-                  <div class="d-flex justify-content-between gap-4 text-neutral-40">
+                  <div class="d-flex justify-content-between gap-4 text-neutral-40 fs-8 fs-md-7">
                     <span class="fw-bold">SUN-MON</span>
                     <span class="fw-bold">11:00 - 20:00</span>
                   </div>
                 </div>
-                <p class="card-text fw-medium">
+                <p class="card-text fs-8 fs-md-7">
                   從鮮美的海鮮、經典的牛排，到各國的特色美食，我們都一應俱全。在這裡，您可以品嚐到世界各地的美食，每一道菜都由專業廚師用心製作，讓您在享受美食的同時，也能感受到我們的熱情與用心。
                 </p>
               </div>
@@ -377,12 +377,12 @@ import { Icon } from '@iconify/vue';
                   <h5 class="card-title mb-0 fw-bold">
                     天潮
                   </h5>
-                  <div class="d-flex justify-content-between gap-4 text-neutral-40">
+                  <div class="d-flex justify-content-between gap-4 text-neutral-40 fs-8 fs-md-7">
                     <span class="fw-bold">SUN-MON</span>
                     <span class="fw-bold">14:00 - 19:30</span>
                   </div>
                 </div>
-                <p class="card-text fw-medium">
+                <p class="card-text fs-8 fs-md-7">
                   我們提供各種精緻甜點與糕點，無論您喜歡的是巧克力蛋糕、法式馬卡龍，還是台灣傳統的糕點，都能在這裡找到。讓我們的甜點帶您進入一場繽紛的甜蜜旅程。
                 </p>
               </div>
@@ -422,10 +422,10 @@ import { Icon } from '@iconify/vue';
               class="mb-2 mb-md-4 display-1 text-primary-100"
               icon="ic:baseline-directions-car"
             />
-            <h5 class="fw-bold">
+            <h5 class="fs-7 fs-md-5 fw-bold">
               自行開車
             </h5>
-            <p class="mb-0 fw-medium">
+            <p class="mb-0 fs-8 fs-md-7">
               如果您選擇自行開車，可以透過國道一號下高雄交流道，往市區方向行駛，並依路標指示即可抵達「享樂酒店」。飯店內設有停車場，讓您停車方便。
             </p>
           </div>
@@ -434,10 +434,10 @@ import { Icon } from '@iconify/vue';
               class="mb-2 mb-md-4 display-1 text-primary-100"
               icon="ic:baseline-train"
             />
-            <h5 class="fw-bold">
+            <h5 class="fs-7 fs-md-5 fw-bold">
               高鐵/火車
             </h5>
-            <p class="mb-0 fw-medium">
+            <p class="mb-0 fs-8 fs-md-7">
               如果您是搭乘高鐵或火車，可於左營站下車，外頭有計程車站，搭乘計程車約20分鐘即可抵達。或者您也可以轉乘捷運紅線至中央公園站下車，步行約10分鐘便可抵達。
             </p>
           </div>
@@ -446,10 +446,10 @@ import { Icon } from '@iconify/vue';
               class="mb-2 mb-md-4 display-1 text-primary-100"
               icon="mdi:car-side"
             />
-            <h5 class="fw-bold">
+            <h5 class="fs-7 fs-md-5 fw-bold">
               禮賓車服務
             </h5>
-            <p class="mb-0 fw-medium">
+            <p class="mb-0 fs-8 fs-md-7">
               承億酒店提供禮賓專車接送服務，但因目的地遠近會有不同的收費，請撥打電話將由專人為您服務洽詢專線：(07)123-4567
             </p>
           </div>
@@ -685,13 +685,6 @@ section .btn {
   }
 }
 
-.about-content p {
-
-  @include media-breakpoint-down(md) {
-    font-size: 14px;
-  }
-}
-
 
 .room-intro::before {
   position: absolute;
@@ -824,11 +817,6 @@ section .btn {
   backdrop-filter: blur(10px);
 }
 
-.delicacy span {
-  @include media-breakpoint-down(md) {
-    font-size: 14px;
-  }
-}
 
 .transportation .deco-line {
   width: 161px;
