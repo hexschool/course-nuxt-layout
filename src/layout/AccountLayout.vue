@@ -107,7 +107,7 @@ import 'bootstrap/js/dist/collapse';
           >
         </picture>
         
-        <main class="position-relative">
+        <main class="position-relative w-100 w-md-auto">
           <RouterView />
         </main>
       </div>
@@ -130,6 +130,12 @@ $grid-breakpoints: (
 
 .logo {
   max-width: 27vw;
+}
+
+.w-md-auto {
+  @include media-breakpoint-up(md) {
+    width: auto !important;
+  }
 }
 
 @include media-breakpoint-down(md) {
