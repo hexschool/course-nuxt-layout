@@ -891,13 +891,6 @@ section .btn {
 }
 
 
-.swiper {
-  display: grid;
-}
-.swiper :deep(.swiper-wrapper) {
-  min-width: 0;
-}
-
 .swiper :deep(.swiper-button-prev),
 .swiper :deep(.swiper-button-next) {
   width: 56px;
