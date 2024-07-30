@@ -1,24 +1,50 @@
 <script setup>
+import { ref } from 'vue';
 import { Icon } from '@iconify/vue';
+
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+const modules = ref([Autoplay, Navigation, Pagination]);
+
+
 </script>
 
 <template>
   <main class="overflow-hidden">
     <section class="hero position-relative">
-      <picture class="position-relative z-n1">
-        <source
-          srcset="@/assets/images/home-hero.png"
-          media="(min-width:576px)"
+      <swiper
+        :modules="modules"
+        :slides-per-view="1"
+        :pagination="true"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false,
+        }"
+      >
+        <swiper-slide
+          v-for="(num, index) in 5"
+          :key="index"
         >
-        <img
-          class="hero-img"
-          src="@/assets/images/home-hero-sm.png"
-          alt="hero banner"
-        >
-      </picture>
-      <div class="hero__background-overlay" />
+          <picture>
+            <source
+              srcset="@/assets/images/home-hero.png"
+              media="(min-width:576px)"
+            >
+            <img
+              class="hero-img"
+              src="@/assets/images/home-hero-sm.png"
+              alt="hero banner"
+            >
+          </picture>
+        </swiper-slide>
+      </swiper>
 
-      <div class="hero-wrapper d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between gap-md-10 w-100 position-absolute px-md-20">
+      <div class="hero-wrapper d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-between gap-md-10 w-100 px-md-20 position-absolute z-2">
         <div class="d-flex flex-column align-items-center text-center d-md-block text-md-start">
           <div class="mt-10 mb-5 mt-md-0 mb-md-10 text-primary-100 fw-bold">
             <h2>
@@ -520,6 +546,7 @@ section .btn {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  filter: brightness(40%);
 }
 
 .hero-wrapper {
@@ -569,12 +596,6 @@ section .btn {
   }
 }
 
-.hero__background-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.6);
-}
 
 .deco-line {
   width: 33vw;
@@ -824,7 +845,78 @@ section .btn {
   @include media-breakpoint-down(md) {
     width: 194px;
   }
-} 
+}
+
+
+.swiper {
+  display: grid;
+}
+.swiper :deep(.swiper-wrapper) {
+  min-width: 0;
+}
+
+.swiper :deep(.swiper-button-prev),
+.swiper :deep(.swiper-button-next) {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  color: #4B4B4B;
+  border-radius: 100px;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.swiper :deep(.swiper-button-prev::after),
+.swiper :deep(.swiper-button-next::after) {
+  font-size: 40px;
+}
+
+.swiper :deep(.swiper-button-prev::after) {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.swiper :deep(.swiper-button-next::after) {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.swiper :deep(.swiper-pagination) {
+  bottom: 24px;
+}
+
+.swiper :deep(.swiper-pagination-bullet) {
+  width: 32px;
+  height: 4px;
+  background-color: #F1EAE4;
+  border-radius: 100px;
+  opacity: 1;
+}
+
+.swiper :deep(.swiper-pagination-bullet-active) {
+  width: 60px;
+  background-color: #BF9D7D;
+}
 
 
 </style>
