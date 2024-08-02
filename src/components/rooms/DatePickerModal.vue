@@ -5,7 +5,7 @@ import { DatePicker } from 'v-calendar';
 import 'v-calendar/style.css';
 import { useScreens } from 'vue-screen-utils';
 
-import { Modal } from 'bootstrap';
+import Modal from 'bootstrap/js/dist/modal';
 import { Icon } from '@iconify/vue';
 
 const modal = ref(null);
